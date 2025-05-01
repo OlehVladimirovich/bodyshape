@@ -1,9 +1,37 @@
 .footer {
-
+  padding: 70px 0;
 }
+
+.footer a:hover {
+  color: var(--accent);
+}
+
 .footer-social {
+  margin-bottom: 30px;
+
+  display: flex;
+  gap: 20px 50px;
+  align-items: center;
 }
 .footer-contacs {
+  display: flex;
+  gap: 50px;
+
+  font-style: 14px;
+  line-height: 2;
 }
-.footer-contacs-col {
+
+@media (max-width 600px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer-social {
+    gap: 30px;
+  }
+
+  .footer-contacs {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
